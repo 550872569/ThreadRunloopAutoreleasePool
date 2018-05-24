@@ -34,26 +34,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MrcObj *mrcObj = [MrcObj new];//1
-    NSLog(@"mrcObj:%d",[mrcObj retainCount]);//1
-    [mrcObj release];//0
-#warning release 之后retaincount 为0 再发消息对象已经被销毁会crash
-//    NSLog(@"mrcObj:%d",[mrcObj retainCount]);//exc_bad_access
-
-   
-    MrcObj *mrcObj1 = [MrcObj new];//1
-    [mrcObj1 autorelease];//延迟release
-    
-    /** p [NSRunLoop currentRunLoop]
-     (NSRunLoop *) $0 = 0x000060c0000b95c0 */
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSLog(@"mrcObj1:%d",[mrcObj1 retainCount]);//mrcObj:1
-    });
-    
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [self read];/** p [NSRunLoop currentRunLoop]
-                     (NSRunLoop *) $1 = 0x000060c0000b9a40 */
-    });
+//    MrcObj *mrcObj = [MrcObj new];//1
+//    NSLog(@"mrcObj:%d",[mrcObj retainCount]);//1
+//    [mrcObj release];//0
+//#warning release 之后retaincount 为0 再发消息对象已经被销毁会crash
+////    NSLog(@"mrcObj:%d",[mrcObj retainCount]);//exc_bad_access
+//
+//   
+//    MrcObj *mrcObj1 = [MrcObj new];//1
+//    [mrcObj1 autorelease];//延迟release
+//    
+//    /** p [NSRunLoop currentRunLoop]
+//     (NSRunLoop *) $0 = 0x000060c0000b95c0 */
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        NSLog(@"mrcObj1:%d",[mrcObj1 retainCount]);//mrcObj:1
+//    });
+//    
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        [self read];/** p [NSRunLoop currentRunLoop]
+//                     (NSRunLoop *) $1 = 0x000060c0000b9a40 */
+//    });
 }
 
 - (void)read {

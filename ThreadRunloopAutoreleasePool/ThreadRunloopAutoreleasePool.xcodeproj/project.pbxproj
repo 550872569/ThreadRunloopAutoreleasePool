@@ -16,6 +16,7 @@
 		8D4C950520B665D40021E609 /* ThreadRunloopAutoreleasePoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C950420B665D40021E609 /* ThreadRunloopAutoreleasePoolTests.m */; };
 		8D4C951020B665D40021E609 /* ThreadRunloopAutoreleasePoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C950F20B665D40021E609 /* ThreadRunloopAutoreleasePoolUITests.m */; };
 		8D4C951F20B67CD60021E609 /* MrcObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C951E20B67CD60021E609 /* MrcObj.m */; };
+		8D4C952220B699420021E609 /* TestObj.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4C952120B699420021E609 /* TestObj.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		8D4C951120B665D40021E609 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D4C951D20B67CD60021E609 /* MrcObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MrcObj.h; sourceTree = "<group>"; };
 		8D4C951E20B67CD60021E609 /* MrcObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MrcObj.m; sourceTree = "<group>"; };
+		8D4C952020B699420021E609 /* TestObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestObj.h; sourceTree = "<group>"; };
+		8D4C952120B699420021E609 /* TestObj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestObj.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				8D4C94EC20B665D40021E609 /* AppDelegate.m */,
 				8D4C94EE20B665D40021E609 /* ViewController.h */,
 				8D4C94EF20B665D40021E609 /* ViewController.m */,
+				8D4C952020B699420021E609 /* TestObj.h */,
+				8D4C952120B699420021E609 /* TestObj.m */,
 				8D4C951D20B67CD60021E609 /* MrcObj.h */,
 				8D4C951E20B67CD60021E609 /* MrcObj.m */,
 				8D4C94F120B665D40021E609 /* Main.storyboard */,
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D4C952220B699420021E609 /* TestObj.m in Sources */,
 				8D4C951F20B67CD60021E609 /* MrcObj.m in Sources */,
 				8D4C94F020B665D40021E609 /* ViewController.m in Sources */,
 				8D4C94FB20B665D40021E609 /* main.m in Sources */,
